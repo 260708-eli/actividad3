@@ -130,7 +130,7 @@ def move():
     goto(pacman.x + 10, pacman.y + 10)
     dot(20, 'yellow')
 
-   for point, course in ghosts:
+    for point, course in ghosts:
         options = [
             vector(5, 0),
             vector(-5, 0),
