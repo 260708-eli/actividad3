@@ -20,7 +20,7 @@ writer = Turtle(visible=False)
 aim = vector(5, 0)
 pacman = vector(-40, -80)
 ghosts = [
-    [vector(-180, 160), vector(10, 0)],
+    [vector(-180, 160), vector(10, 0)], #en vez de 5 se cabió a 10 debido a que es más rápido
     [vector(-180, -160), vector(0, 10)],
     [vector(100, 160), vector(0, -10)],
     [vector(100, -160), vector(-10, 0)],
@@ -133,10 +133,10 @@ def move():
 
     for point, course in ghosts:
         options = [
-            vector(5, 0),
-            vector(-5, 0),
-            vector(0, 5),
-            vector(0, -5),
+            vector(10, 0),
+            vector(-10, 0),
+            vector(0, 10),
+            vector(0, -10),
         ]
         
         # Filtra solo las direcciones válidas (donde no haya pared)
